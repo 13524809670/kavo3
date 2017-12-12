@@ -1,0 +1,48 @@
+#bgImg{padding:8% 0;}
+.content-1{
+    width:100%;
+    position: relative;
+}
+.bgImg{
+    width:100%;
+}
+.titleBox{
+    width:36%;
+    position: absolute;
+    top:3.5%;
+    left:50%;
+    margin-left:-18%;
+}
+.titleBox .title{
+    width:100%;
+}
+.picBox{
+    width:64%;
+    position: absolute;
+    top:21%;
+    left:50%;
+    margin-left:-31%;
+    text-align: center;
+}
+.picBox .pic{
+    width:100%;
+    height: 1.6rem;
+    overflow: hidden;
+    border:1px solid #999;
+}
+.ti-txt{
+    font-size:0.12rem;
+    color:#666;
+}
+.btn{
+    display: block;
+    width:32%;
+    margin: 2% auto 0;
+}
+/* 点赞 */
+.zang{
+	width: 7%;
+	position: absolute;
+	top:65%;
+	right:8%;
+}

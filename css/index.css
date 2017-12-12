@@ -1,0 +1,390 @@
+﻿#BgImg{
+	width:100%;
+}
+
+
+.activity-intr,
+.activity-rules{
+	width:100%;
+}
+
+
+
+/*<!--活动介绍-->*/
+.activity-intr{
+	width:100%;
+	position: relative;
+	/*background: url(../img/22.jpg) no-repeat;
+	background-size:100%;*/
+	/*padding: 10% 0 20% 0;*/
+}
+/*tab切换*/
+.tabbtn{
+	width:80%;
+	position: absolute;
+	top:13%;
+	left:50%;
+	margin-left: -40%;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+}
+.tabbtn li{
+	width:30%;
+	border-radius: 8px;
+	text-align: center;
+	padding:3% 0;
+	color:#747474;
+	background: #efefef;
+	border:2px solid #d9d9d9;
+}
+.tabbtn li.on{
+	color:#fff;
+	background: #4ecac6;
+	border:2px solid #4ecac6;
+}
+
+
+.wrap_box{
+	width:90%;
+	position: absolute;
+	top:23%;
+	left:50%;
+	margin-left:-45%;
+	z-index: 99;
+}
+/*第一块///第三块*/
+.taba,.tabc{
+	width:100%;
+	margin:0 auto;
+}
+/*第二块*/
+.tabb{
+	width: 100%;
+	margin: 0 auto;
+}
+.tabb .ren{
+	width: 100%;
+	margin:0 auto 10%;
+}
+.tabb .car-wrap1{
+	width:85%;
+	margin:0 auto;
+}
+.tabb,.tabc{display: none;}
+
+
+
+
+/*<!--活动规则-->*/
+/*.activity-rules{padding-top:6%;}*/
+.activity-rules > img{
+	width: 50%;
+	margin:0 auto;
+}
+.reward-time{padding-top:7%;}
+.reward-time li,
+.reward-set li{
+	color:#696969;
+	text-align: center;
+	line-height: 2;
+}
+.reward-time li h1,
+.reward-set li h1{
+	font-size:.15rem;
+	width: 100%;
+	text-align: center;
+}
+.reward-time li h1,
+.reward-time li h1 img,
+.reward-set li h1,
+.reward-set li h1 img{
+	vertical-align: middle;
+	display: inline-block;
+}
+.reward-time li img,
+.reward-set li img{
+	width:6%;
+	margin-right:3%;
+}
+.reward-set .m-top{
+	margin-top:3%;
+}
+.reward-time li b{font-size:.12rem;}
+
+/*<!--奖励设置-->*/
+.reward-set{
+	padding-bottom:10%;
+}
+.reward-set li{
+	font-size:.12rem;
+}
+.reward-set span{
+	color:#e87a12;
+}
+.activity-rules a > img{
+	width: 50%;
+	margin:0 40% 0 30%;
+}
+
+
+
+
+/*三点*/
+.dian{
+	width:100%;
+	position: relative;
+	text-align: center;
+}
+.dian .con_wrap{
+	width: 96%;
+	position: absolute;
+	top:13%;
+	left:50%;
+	margin-left: -48%;
+}
+.dian .con_wrap > p{
+	font-size: 0.12rem;
+	color:#444;
+}
+.dian .title1{
+	width: 95%;
+	margin:0 auto;
+}
+.dian .carl-wrap{
+	position: relative;
+}
+.dian .carl-wrap > img{
+	width: 100%;
+}
+
+.carl-wrap .swiper-container{
+	width: 60%;
+	position: absolute;
+	top:19%;
+	left:50%;
+	margin-left: -30%;
+}
+.swiper-slide a{
+	color:#666;
+}
+.swiper-slide p{
+	line-height: 2;
+	font-size: 0.12rem;
+}
+.carl-wrap .btn-title{
+	width: 80%;
+	position: absolute;
+	top:81%;
+	left:50%;
+	margin-left: -40%;
+	text-align: center;
+}
+
+.btn-title img{
+	width: 30%;
+	margin: 0 auto;
+}
+.carl-wrap .zan{
+	width: 7%;
+	position: absolute;
+	top:64%;
+	right:10%;
+}
+.dian .more{
+	width: 100%;
+	position: absolute;
+	top:103%;
+}
+.more img{
+	width: 20%;
+	margin:0 auto;
+}
+
+
+
+
+/*轮播图*/
+.carousel{
+	padding-top:8%;
+}
+.carousel h1 img{
+	width: 85%;
+	margin:0 auto 5%;
+}
+.carousel .swiper-container{
+	width: 95%;
+	margin:0 auto;
+	border:3px solid #666;
+	border-radius: 5px;
+}
+.colse-wrap{
+	width: 95%;
+	background: #f6b95e;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-left:-47.5%;
+	margin-top:-25%;
+	z-index: 20;
+	display: none;
+	border-radius: 3px;
+}
+.video-wrap{
+	width:100%;
+	padding:1%;
+}
+.colse-wrap #colse{
+	width:7%;
+	float: right;
+	margin:2% 1% 1% 1%;
+}
+/*
+.video-wrap{
+	width:100%;
+	position: fixed;
+	top:50%;
+	left:0;
+	margin-top:-25%;
+	z-index: 30;
+	display: none;
+	backjround:red;
+}
+*/
+
+
+/*二维码*/
+.code{
+	text-align: center;
+}
+.code h1{
+	width: 100%;
+}
+.code h1 img{
+	width:80%;
+	margin:0 auto;
+}
+.code > img{
+	width: 100%;
+	margin:0 auto;
+}
+.code p{
+	letter-spacing: 2px;
+	color:#666;
+	line-height: 3;
+	font-size:.12rem;
+}
+
+
+/*报名按钮*/
+.signUpBtn{
+	width: 100%;
+	position: relative;
+}
+.signUpBtn a{
+	display: block;
+}
+.signUpBtn img{
+	width: 17%;
+	position: fixed;
+	bottom:10%;
+	right:2.5%;
+	z-index: 129;
+}
+
+/*评选方式*/
+.info{
+	position: fixed;
+	top:48%;
+	left:50%;
+	margin-top:-60%;/*修改*/
+	margin-left:-45%;
+	width: 90%;
+	color:#696969;
+	background: #fff;
+	z-index: 10;
+	border-radius: 10px;
+	padding:3% 0;/*修改*/
+}
+.info h2{
+	text-align: center;
+	width: 100%;
+	color:#e87a12;
+	line-height: 3;
+	font-size: .15rem;
+}
+.info span{
+	border-top:1px solid #f60;
+	width: 30%;
+	height: 1px;
+}
+.info h2,
+.info span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.info p{
+	font-size:.12rem;
+	line-height: 1.6;
+	padding:2% 5%;
+}
+.info p b{
+	color:#e87a12;
+}
+.info p:nth-last-child(1){
+	font-size: .1rem;
+}
+.mask,
+.info{
+	display: none;
+}
+.mask{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: (255,255,255,0);
+	z-index: 7;
+}
+
+/*下箭头*/
+#bo,#boo{
+	width:15%;
+	position: fixed;
+	bottom:1%;
+	left:50%;
+	margin-left:-7.5%;
+	z-index: 999;
+	animation:flash 2s infinite linear;
+}
+#boo{
+    transform-origin:center center;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transition: transform 0.2s; 
+    -webkit-transition: -moz-transform 0.2s; 
+    -moz-transition: -moz-transform 0.2s;
+    animation:flash 2s infinite linear; 
+    display: none;
+}
+/*旋转角度*/
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}

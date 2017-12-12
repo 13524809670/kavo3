@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>口腔设备保养</title>
+<link rel="stylesheet" href="css/app-reset.css" />
+<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link rel="stylesheet" href="css/iconfont.css" />
+<link rel="stylesheet" href="css/com-up.css" />
+</head>
+<body id="main">
+
+	<!-- PO正文 -->
+	<div class="po-con">
+		<img src="img/po-k.png" alt="">
+		<h1>温州口腔医院</h1>
+		<div class="po-wrap">
+			<div class="fl-img"><img src="img/piv.jpg" alt=""></div>
+			<div class="fr">
+				<p>这次小编有幸跟随工程师来到温州医科大学附属口腔医院（以下简称“温州口腔医院”），亲眼见证保养现场的精彩瞬间~... ..</p>
+				<a href=""><img src="img/btn2.png" alt=""></a>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<!-- 轮播 评论 -->
+	<div class="Carousel">
+		<img src="img/car-k.png" alt="">
+
+		<div class="car3-wrap">
+			<div class="swiper-container" id="banner3-sixe">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="https://www.baidu.com/"><img src="img/pic.jpg" alt="" /></a></div>
+					<div class="swiper-slide"><a href="http://www.ih5.cn/"><img src="img/pic.jpg" alt="" /></a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="zan"><img src="img/a1.png" alt=""><!-- 点赞 --></div>
+		<!-- 评论 -->
+		<div class="pin"><img src="img/pin.png" alt="" ></div>
+
+		<div class="jia">
+			<li><img src="img/good.png" alt="">&nbsp;莎士比亚、求真、斗破苍穹等<span>81</span>人评论过</li>
+			<li><span>莎士比亚</span><b>回复：</b><p class="inline">这家服务不错..</p></li>
+		</div>
+
+		<!--评论区域 begin-->
+		<div class="commentAll all">
+			<input type="text" placeholder="说点啥呗....." class="value">
+			<button class="pinbtn">评论</button>
+		</div>
+	</div>
+
+
+	<!-- 上传图片 -->
+	<div class="upload2">
+		<img src="img/kuan7.png" alt="">
+		<div class="up-wrap">
+			<div class="textarea">
+				<textarea placeholder="说点什么ba..." id="$"></textarea>
+			</div>
+			<div id="pre">
+				<div id="fileUploadContent" class="fileUploadContent">
+					
+				</div>
+			</div>
+		</div>
+		<button onclick="testUpload()" class="submit"><img src="img/btn4.png" alt=""></button>
+	</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/load.js"></script>
+<!-- <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+<!-- <script type="text/javascript" src="js/share.js"></script> -->
+<script>
+	$("#fileUploadContent").initUpload({
+        "uploadUrl":"#",     //上传文件信息地址
+        //"size":350,        //文件大小限制，单位kb,默认不限制
+        //"maxFileNumber":3,    //文件个数限制，为整数
+        //"filelSavePath":"",    //文件上传地址，后台设置的根目录
+        "beforeUpload":beforeUploadFun,//在上传前执行的函数
+        //"onUpload":onUploadFun，//在上传后执行的函数
+        //autoCommit:true,        //文件是否自动上传
+        "fileType":['png','jpg','docx','doc','mp4']//文件类型限制，默认不限制，注意写的是文件后缀
+    });
+    function beforeUploadFun(opt){
+        opt.otherData =[{"name":"name","value":"zxm"}];
+    }
+    function onUploadFun(opt,data){
+        alert(data);
+        uploadTools.uploadError(opt);//显示上传错误
+        uploadTools.uploadSuccess(opt);//显示上传成功
+    }
+    function testUpload(){
+        var opt = uploadTools.getOpt("fileUploadContent");
+        uploadEvent.uploadFileEvent(opt);
+        // var txt = $('#textarea').val();
+        // console.log(txt);
+    }
+</script>
+</html>
+

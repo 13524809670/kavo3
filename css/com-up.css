@@ -1,0 +1,300 @@
+#main{padding-top:6%;}
+.po-con,.Carousel,.upload2{
+	width:95%;
+	margin:0 auto;
+	position: relative;
+}
+.po-con{
+	z-index: 2;
+}
+.Carousel{
+	top:-4%;
+	z-index: 1;
+}
+.upload2{
+	top:-11%;
+	z-index: 0;
+	margin-bottom:10%;
+}
+
+.po-con > img,
+.Carousel > img{
+	width:100%;
+}
+.upload2 > img{
+	width:90%;
+	margin: 0 auto;
+}
+
+
+/* PO文样式 */
+.po-con h1{
+	position: absolute;
+	top:3%;
+	left:50%;
+	margin-left:-20%;
+	font-size:0.25rem;
+}
+.po-wrap{
+	width:84%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top:24%;
+	left:50%;
+	margin-left:-41%;
+}
+.po-wrap .fl-img{
+	width:35%;
+	height: 1.4rem;
+	overflow: hidden;
+	border:1px solid #999;
+}
+.fr{
+	width:65%;
+	padding-left:3%;
+}
+.fr p{
+	font-size:.12rem;
+	color:#555;
+	line-height: 1.5;
+	/* 显示4行自动隐藏 */
+	text-overflow: -o-ellipsis-lastline;  
+	overflow: hidden;  
+	text-overflow: ellipsis;  
+	display: -webkit-box;  
+	-webkit-line-clamp: 4;  
+	-webkit-box-orient: vertical; 
+}
+.fr a{
+	width:100%;
+}
+.fr a img{
+	width:40%;
+	margin: 15% auto 0;
+}
+/* ------------------ */
+
+
+.car3-wrap{
+	width:76%;
+	height: 1.6rem;
+	position: absolute;
+	top:15%;
+	left:50%;
+	margin-left:-42%;
+	overflow: hidden;
+}
+
+/* 点赞 */
+.Carousel .zan{
+	width: 7%;
+	position: absolute;
+	top:42%;
+	right:7%;
+}
+
+/* 评论 */
+.Carousel .pin{
+	width:7%;
+	position: absolute;
+	top:50%;
+	right:7%;
+	background: #fff;
+	z-index: 9;
+}
+.Carousel .all{
+	display: flex;
+	justify-content: space-between;
+}
+.Carousel .commentAll{
+	width:88%;
+	height: 1.5rem;
+	position: absolute;
+	top:62%;
+	left:50%;
+	margin-left:-44%;
+	background: #fff;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	padding:1%;
+	z-index: 999;
+	overflow: auto;
+	display: none;
+}
+.commentAll .value{
+	width:75%;
+	height: 0.3rem;
+	text-indent: 8px;
+	font-size:0.12rem;
+	border:1px solid #ddd;
+	border-radius: 5px;
+}
+.commentAll .pinbtn{
+	width:23%;
+	height: 0.3rem;
+	background: green;
+	color:#fff;
+	font-size:0.12rem;
+	border-radius: 5px;
+}
+
+
+.jia{
+	width:82%;
+	position: absolute;
+	bottom:25%;
+	left:50%;
+	margin-left:-41%;
+}
+.jia li{
+	width:100%;
+	font-size:0.12rem;
+	color:#999;
+}
+.jia li img{
+	width:6%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.jia li .inline{
+	display: inline-block;
+}
+.Carousel .txt-wrap{
+	width:100%;
+	position: absolute;
+	bottom:22%;
+	display: none;
+	z-index: 9;
+}
+.Carousel .txt-wrap textarea{
+	width:85%;
+	height: 0.6rem;
+	margin: 0 auto;
+	display: block;
+	border-radius: 10px;
+	text-indent: 10px;
+	font-size:0.12rem;
+	color:#666;
+}
+
+
+/* 上传图片 */
+.up-wrap{
+	width:74%;
+	position: absolute;
+	top:25%;
+	left:50%;
+	margin-left:-37%;
+	background: #f3c781;
+}
+#pre{
+	position: relative;
+	height: 1.2rem;
+}
+
+/* 说说 */
+.textarea {
+    width: 100%;
+    position: absolute;
+    top:2%;
+	left:0;
+	z-index: 10;
+}
+.textarea textarea {
+    width:100%;
+    height: 0.3rem;
+    font-size: 0.12rem;
+    text-indent: 10px;
+    color:#91715f;
+    border:none;
+    background: none;
+    overflow: hidden;
+    resize:none;
+    line-height: 1.5;
+}
+
+.fileUploadContent{
+    width:100%;
+    position: absolute;
+    bottom:0;
+    background: #f3c781;
+}
+.fileUploadContent .box{
+    width:100%;
+    height: 0.8rem;
+	overflow: hidden;
+}
+.fileUploadContent .uploadBts{
+	width:100%;
+	height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+	z-index: 9;
+}
+.fileUploadContent .uploadBts img{
+	width:50%;
+	margin-left:3%;
+	margin-top:3%;
+}
+.fileUploadContent .fileItem{
+    width: 100%;
+    height: 100%;
+} 
+.fileUploadContent .fileItem .imgShow{
+    width: 100%;
+    height: 100%;
+}
+
+/* 上传图片样式 */
+.fileUploadContent .fileItem .imgShow img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 12;
+}
+
+/* 删除图标样式 */
+.fileUploadContent .fileItem .status i{
+    display: block;
+    color: red;
+    font-size: 26px;
+    position: absolute;
+    bottom:3%;
+    right:2%;
+    z-index: 99;
+}
+
+
+
+/* 上传 */
+.submit{
+    width: 100%;
+    position: absolute;
+    top:80%;
+    left:50%;
+    margin-left:-50%;
+    background:none;
+    z-index: 2;
+}
+.submit img{
+    width:26%;
+    margin:0 auto;
+}
+
+/* 废弃图标样式 */
+.fileUploadContent .uploadBts>div i{
+    font-size: 15px;
+    color: #0099FF;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
